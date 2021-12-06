@@ -23,6 +23,7 @@ class Menu(ABC):
         print("Введите количество столбцов матрицы:")
         cnt_columns = correct_int()
         matrix = Matrices(cnt_lines, cnt_columns)
+        print(f"Введите матрицу:")
         matrix.write_matrix()
         return matrix
 
@@ -84,11 +85,14 @@ class Menu(ABC):
     @staticmethod
     def action_mul_constant():
         matrix1 = Menu.input_matrix()
+        print("Введите число, на которое умножается матрицы")
         number = correct_int()
         matrix1 * number
 
     @staticmethod
     def action_matrix_degree():
         matrix = Menu.input_matrix()
-        matrix.exponentation_matrix()
+        print("Введите степень, в которую возводим матрицу")
+        number = correct_int()
+        matrix.exponentation_matrix(number)
 
