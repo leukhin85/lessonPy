@@ -1,5 +1,5 @@
 from System.Class_Menu import Menu
-#from Class_Matrix import Matrices
+# from Class_Matrix import Matrices
 
 
 if __name__ == '__main__':
@@ -19,7 +19,7 @@ if __name__ == '__main__':
     # matrix2.__sub__(matrix1)
     # print("\nМетод умножения матриц друг на друга:")
     # matrix2 * matrix1
-    # print("\nсмена матриц друг на друга в этом же методе")
+    # print("\n смена матриц друг на друга в этом же методе")
     # matrix1 * matrix2
     # print("\nМетод возведения матрицы в степень:")
     # matrix1.exponentation_matrix()
